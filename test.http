@@ -1,0 +1,20 @@
+POST localhost:8080/participants
+content-type: application/json
+
+{
+	"cpf": 1023103i1039102,
+	"name": "edu",
+	"phone": "(11)3482948249238",
+	"number": "182",
+	"district": "cabo do macaco",
+	"street": "lambe seco",
+	"maritalStatus": "Single"
+}
+
+###
+
+GET localhost:8080/participants
+
+### 
+
+GET localhost:8080/api
