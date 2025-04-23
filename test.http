@@ -12,4 +12,4 @@ GET localhost:8080/participants
 
 ### 
 
-GET localhost:8080/api
+DELETE localhost:8080/participants/1

@@ -27,12 +27,12 @@
     </dependencies>
   </dependencyManagement>
   <dependencies>
-		<dependency>
-    	<groupId>org.projectlombok</groupId>
-    	<artifactId>lombok</artifactId>
-    	<version>1.18.30</version>
-    	<scope>provided</scope>
-		</dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.30</version>
+      <scope>provided</scope>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
@@ -41,14 +41,14 @@
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest</artifactId>
     </dependency>
-		<dependency>
-  		<groupId>io.quarkus</groupId>
-  		<artifactId>quarkus-jdbc-postgresql</artifactId>
-		</dependency>
-		<dependency>
-		  <groupId>io.quarkus</groupId>
-		  <artifactId>quarkus-hibernate-orm-panache</artifactId>
-		</dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-jdbc-postgresql</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-hibernate-orm-panache</artifactId>
+    </dependency>
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-rest-jackson</artifactId>
@@ -66,23 +66,6 @@
   </dependencies>
   <build>
     <plugins>
-			<plugin>
-    		<artifactId>maven-compiler-plugin</artifactId>
-    		<configuration>
-    		  <annotationProcessorPaths>
-    		    <path>
-    		      <groupId>org.projectlombok</groupId>
-    		      <artifactId>lombok</artifactId>
-    		      <version>1.18.30</version>
-    		    </path>
-    		    <path>
-    		      <groupId>io.quarkus</groupId>
-    		      <artifactId>quarkus-extension-processor</artifactId>
-    		      <version>${quarkus.version}</version>
-    		    </path>
-    		  </annotationProcessorPaths>
-    		</configuration>
-  		</plugin>
       <plugin>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>quarkus-maven-plugin</artifactId>
