@@ -4,17 +4,19 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public class CPF {
-  private Integer number;
+  private String cpf;
 
-  public CPF(Integer number) {
-    this.number = number;
+  public CPF() {}
+
+  public CPF(String cpf) {
+    this.cpf = cpf;
   }
 
-	public Integer getNumber() {
-		return number;
-	}
+  public String getCpf() {
+    return cpf;
+  }
 
-	public void setNumber(Integer number) {
-		this.number = number;
-	}
+  public void setCpf(String cpf) {
+    this.cpf = cpf;
+  }
 }

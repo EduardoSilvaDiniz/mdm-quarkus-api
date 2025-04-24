@@ -4,6 +4,6 @@ import jakarta.persistence.Embeddable;
 
 @Embeddable
 public enum MaritalStatus {
-	Single, Married, Widowed
+	SINGLE, MARRIED, WIDOWED
 }
 
