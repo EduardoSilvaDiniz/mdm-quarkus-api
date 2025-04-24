@@ -3,7 +3,14 @@ content-type: application/json
 
 {
 	"name": "edu",
-	"phone": "(11)3482948249238"
+	"phone": "(11)3482948249238",
+	"address": {
+		"number": "101",
+		"district": "teucu",
+		"street": "macarrão"
+	},
+	"maritalStatus": "SINGLE",
+	"cpf" : "929292929-42"
 }
 
 ###
