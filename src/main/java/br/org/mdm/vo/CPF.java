@@ -1,10 +1,8 @@
-package br.org.mdm.entity;
+package br.org.mdm.vo;
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.Embeddable;
 
-@Getter
-@Setter
+@Embeddable
 public class CPF {
   private Integer number;
 
