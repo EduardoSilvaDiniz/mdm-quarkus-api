@@ -6,4 +6,4 @@ import br.org.mdm.entity.ParticipantEntity;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
 @ApplicationScoped
-public interface ParticipantRepository extends PanacheRepository<ParticipantEntity> {}
+public interface IParticipantRepository extends PanacheRepository<ParticipantEntity> {}
