@@ -2,12 +2,12 @@ POST localhost:8080/participants
 content-type: application/json
 
 {
-	"name": "edu",
+	"name": "jose carlos",
 	"phone": "(11)3482948249238",
 	"address": {
 		"number": "101",
-		"district": "teucu",
-		"street": "macarrão"
+		"district": "algum lugar",
+		"street": "jaca"
 	},
 	"maritalStatus": "SINGLE",
 	"cpf" : "929292929-42"
