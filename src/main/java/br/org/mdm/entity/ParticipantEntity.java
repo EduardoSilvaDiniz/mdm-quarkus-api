@@ -14,30 +14,23 @@ import br.org.mdm.record.Participant;
 import br.org.mdm.vo.Address;
 import br.org.mdm.vo.CPF;
 import br.org.mdm.vo.MaritalStatus;
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 @Table(name = "participants")
-public class ParticipantEntity {
-
-  @Id
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
-
+public class ParticipantEntity extends PanacheEntity {
   @Column(nullable = false)
   private String name;
 
   @Column(nullable = false)
   private String phone;
 
-  @Embedded
   @Column(nullable = false)
   private Address address;
 
-  @Embedded
-  @Column(nullable = false)
+  @Column(name = "marital_status", nullable = false)
   private MaritalStatus maritalStatus;
 
-  @Embedded
   @Column(nullable = false)
   private CPF cpf;
 
@@ -47,6 +40,9 @@ public class ParticipantEntity {
     this.id = entity.id();
     this.name = entity.name();
     this.phone = entity.phone();
+		this.address = entity.address();
+		this.maritalStatus = entity.maritalStatus();
+		this.cpf = entity.cpf();
   }
 
   // @PrePersist
